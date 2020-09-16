@@ -1,0 +1,49 @@
+class Product {
+    
+    private int pid;
+    String name;
+    int price;
+    float discount;
+    
+    Product(){
+        //System.out.println("this is constructor");
+    }
+    void functionality( int pid, String name,int price) {
+        
+    this.pid = pid;
+    this.name = name;
+    this.price = price;
+    
+    }
+    public int etpid(int pid){
+        this.pid = pid;
+        return pid;
+    }
+    public String getname(String name){
+        return name;
+    }
+    public int getprice(int price){
+        return price;
+    }
+    //void discription()
+     /*
+ 
+    void showProduct() {
+    System.out.println("pid " + pid +" name " + name +" price " + price);
+    }
+*/
+}
+ throw it in github
+public class mains {
+    public static void main(String[] args){
+        Product p = new Product();
+        /*
+        p.pid = 1; 
+        p.name = "Nord";
+        p.price = 30000;
+        p.showProduct();
+        */
+        //p.setpid(34);
+    System.out.println(p.etpid(32) + " " + p.getname("Nord") + " " + p.getprice(30000));
+    }
+}
